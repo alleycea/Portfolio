@@ -1,0 +1,277 @@
+<html>
+<head>
+  <title>My Portfolio</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <style>
+
+   body, html {
+        scroll-behavior: smooth;
+        height: 100%;
+        margin: 0;
+        font-family: Arial, Helvetica, sans-serif;
+        position: relative;
+      }
+
+    .navbar-inverse{
+    background-color: darkblue;
+    }
+
+   .bg-image {
+        /* The image used */
+        background-image: url("assets/img/background.jpeg");
+        
+        /* Add the blur effect */
+        filter: blur(8px);
+        -webkit-filter: blur(8px);
+        
+        /* Full height */
+        height: 100%; 
+        
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      }
+
+      /* Position text in the middle of the page/image */
+      .bg-text {
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+        color: white;
+        font-weight: bold;
+        border: 3px solid #f1f1f1;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        width: 80%;
+        padding: 20px;
+        text-align: center;
+      }
+      .myNavbar>a:hover{
+        color: green;
+      }
+  .affix {
+      top:0;
+      width: 100%;
+      z-index: 9999 !important;
+  }
+  .navbar {
+      margin-bottom: 0px;
+  }
+
+  .affix ~ .container-fluid {
+     position: relative;
+     top: 50px;
+  }
+
+  .text{
+    text-align: left;
+    font-size: 40px;
+    white-space: nowrap;
+  }
+
+.footer {
+   position: relative;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+   background-color: darkblue;
+   color: white;
+   text-align: center;
+}
+
+* {box-sizing: border-box;}
+
+.proj {
+  position: relative;s
+  width: 50%;
+  max-width: 300px;
+}
+
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 500;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+.proj:hover .overlay {
+  opacity: 1;
+}
+
+.fa {
+  padding: 10px;
+  font-size: 20px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-google {
+  background: #dd4b39;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+  #about {padding-top:50px;height:500px;color: #000000; background-color: #FFFFFF;}
+  #projects {padding-top:50px;height:600px;color: #000000; background-color: #FFFFFF;}
+  #educ {padding-top:50px;height:590px;color: #000000; background-color: #FFFFFF;}
+
+</style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="60">
+
+  <div id="web" class="container-fluid">
+    <div class="bg-image"></div>
+      <div class="bg-text">
+        <h1>Welcome</h1>
+        <h1 style="font-size:50px">I am Alliah P. Cea</h1>
+        <p>And I'm a Future Web Designer</p>
+      </div>
+  </div>
+</div>
+
+<nav id="nav" class="navbar navbar-inverse" data-spy="affix" data-offset-top="197">
+  <div class="container-fluid">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#web">
+         <img src="assets/img/logo.png" alt="img" style="max-width: 120px; max-height: 30px"></img>
+      </a>
+    </div>
+    <div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#educ">Educational Background</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>    
+
+<div class="card">
+  <div id="about" class="container-fluid" style="text-align: center;">
+    <h1><strong>About Me</strong></h1>
+    <div class="container" style="background-color: #DBF9FC;">
+      <div class="col-md-4" style="float: right;">
+        <img src="assets/img/pic.png" alt="Acea" style="max-width: 100%">
+      </div>
+      <div class="text" style="font-family: 'Alex Brush', cursive;">
+        <p style= "color: #CD5C5C;" "font-family: 'Alex Brush', cursive;"><strong>Hello World!</strong></p>
+        </div>
+        <div style="font-size: 20px">
+        <p>You can call me Alley. I'm a 4th year student taking a Bachelor of Science in Information Technology Major in System Developer in Central Luzon State University. I am a person who has high passion in web designing. One of my dreams is to master the web design and I am working toward it. Feel free to have a look at my projects and don't hesistate to contact me if you think I can be of service to you.</p>
+        </div>
+      </div>
+  </div>
+</div>
+
+
+<div id="projects" class="container-fluid" style="text-align: center;">
+  <h1><strong>Projects</strong></h1>
+
+<div class="container" align="left">
+  <div class="proj">
+    <img src="assets/img/mvs.png" alt="Movie Ticket System" width="500" height="auto" float="left">
+    <div class="overlay">Movie Ticket Booking System</div>
+  </div>
+</div>
+</div>
+
+
+<div class="card">
+  <div id="educ" class="container" style="text-align: center;">
+    <h1><strong>Educational Background</strong></h1>
+    <div class="row d-flex justify-content-center" >
+    <div class="col-md-6">
+      <div class="card  mb-3">
+        <!-- set a width on the image otherwise it will expand to full width       -->
+        <img src="assets/img/bcs.png" alt="Card image cap" width="200">
+        <div class="card-body">
+          <h4 class="card-title"><strong>HIGH SCHOOL</strong></h4>
+          <p class="card-text">SULPICIO A. ROCO MEMORIAL HIGH SCHOOL<br>2017-2018</p>
+        </div>
+      </div>
+      <!-- /.card -->
+    </div>
+    <!-- /.col-sm-4 -->
+   <div class="row d-flex justify-content-center" >
+    <div class="col-md-6">
+        <!-- set a width on the image otherwise it will expand to full width       -->
+        <img src="assets/img/sarmhs.png" alt="Card image cap" width="200">
+        <div class="card-body">
+          <h4 class="card-title"><strong>COLLEGE</strong></h4>
+          <p class="card-text">CENTRAL LUZON STATE UNIVERSITY</p>
+        </div>
+      </div>
+      <!-- /.card -->
+    </div>
+    </div>
+  </div>
+
+
+<div class="footer">
+  <div class="bg-light text-center text-white">
+      <div class="container p-4 pb-0">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+     <a href="https://www.facebook.com/cea.alley" class="fa fa-facebook"></a>
+
+      <!-- Google -->
+     <a href="cea.alliah@clsu2.edu.ph" class="fa fa-google"></a>
+
+      <!-- Instagram -->
+     <a href="https://www.instagram.com/alliahcea/" class="fa fa-instagram"></a>
+
+    </section>
+    <!-- Section: Social media -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+    © 2022 Copyright: AlleyCea
+  </div>
+  </div>
+</div>
+
+</body>
+</html>
